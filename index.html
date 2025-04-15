@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">Dev-Front</h1>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="nome-destaque">Olá, eu sou Ronald Oliveira</h2>
+            <p>Desenvolvedor Front-End</p>
+            <a href="#contato" class="btn">Fale comigo</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <h2>Sobre Mim</h2>
+        <p>
+            Olá! Me chamo <strong>Ronald Oliveira</strong>, tenho 20 anos e sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> na <strong>Faculdade Impacta</strong>. 🤓<br><br>
+            Desde cedo me encantei pelo mundo da tecnologia, o que me levou a explorar tanto o universo do <strong>desenvolvimento front-end</strong> quanto o suporte técnico. Já tive experiências profissionais em outras áreas, o que me deu uma base sólida de responsabilidade e organização. Agora, estou focado em conquistar minha primeira oportunidade na área tech, onde eu possa aplicar minhas habilidades, crescer profissionalmente e contribuir com projetos reais.<br><br>
+            Curioso, dedicado e sempre em busca de aprender algo novo.  <br>É assim que encaro cada desafio que aparece pelo caminho. Vamos construir o futuro juntos?
+        </p>
+    </section>
+
+    <section id="projetos" class="section">
+        <h2>Projetos</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Projeto 1</h3>
+                <p>Esse projeto foi projetado eu fazendo a parte do front e meu amigo do backend, esse projeto foi direcionado a nós criarmos um form onde vai amarzernar dados e enviar para uma API, onde terá facilidade em ter controle de registro</p>
+                <a href="https://ronald1134.github.io/Project_forms/"target="_blank">Ver mais 🔗</a>
+            </div>
+            <div class="card">
+                <h3>Projeto 2</h3>
+                <p>Landing Page de um web-food</p>
+                <a href="https://ronald1134.github.io/landing-food/"target="_blank">Ver mais 🔗</a>
+            </div>
+
+            <div class="card">
+                <h3>Projeto 3</h3>
+                <p>Tela de login</p>
+                <a href="https://ronald1134.github.io/projeto-login1.0/" target="_blank">ver mais 🔗</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section">
+        <h2>Habilidades</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <form id="formulario-contato">
+            <input type="text" id="nome" placeholder="Seu nome" required />
+            <input type="email" id="email" placeholder="Seu e-mail" required />
+            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <p id="mensagem-enviada"></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MeuPortfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
