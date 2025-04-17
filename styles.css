@@ -189,6 +189,10 @@
     color: #0ea5e9;
     margin-bottom: 0.5rem;
   }
+  .card > img{
+    text-align: center;
+    width: 95%;
+  }
   
   /* HABILIDADES */
   .skills {
