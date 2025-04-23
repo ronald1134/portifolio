@@ -9,6 +9,7 @@ document.getElementById('formulario-contato').addEventListener('submit', functio
     if (nome && email && mensagem) {
       feedback.textContent = 'Mensagem enviada com sucesso! 💌'
       feedback.style.color = '#38bdf8'
+      feedback.style.textAlign = 'center'
   
       // limpa os campos
       this.reset()
