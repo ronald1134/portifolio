@@ -1,7 +1,7 @@
-// src/styles/GlobalStyles.ts
-import { createGlobalStyle } from "styled-components";
+// styles/GlobalStyle.ts
+import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -21,9 +21,9 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
     transition: 0.3s ease;
-  }
 
-  a:hover {
-    color: #0ea5e9;
+    &:hover {
+      color: #0ea5e9;
+    }
   }
 `;

@@ -1,6 +1,7 @@
 // src/components/Contact/Contact.tsx
 import { useForm } from "react-hook-form";
-import { Container } from "./styles";
+import { ContactContainer, ContactForm } from './styles';
+import React from "react";
 
 interface FormData {
     nome: string;
@@ -17,9 +18,9 @@ export const Contact = () => {
     };
 
     return (
-        <Container id="contato">
+        <ContactContainer id="contato">
             <h2>Contato</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <ContactForm onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("nome", { required: "O nome é obrigatório" })} placeholder="Seu nome" />
                 {errors.nome && <span>{errors.nome.message}</span>}
 
@@ -32,7 +33,7 @@ export const Contact = () => {
                 <button type="submit">Enviar</button>
 
                 {isSubmitSuccessful && <p>Mensagem enviada com sucesso! 💌</p>}
-            </form>
-        </Container>
+            </ContactForm>
+        </ContactContainer>
     );
 };

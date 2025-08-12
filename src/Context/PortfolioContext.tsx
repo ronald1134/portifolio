@@ -1,5 +1,5 @@
 // src/context/PortfolioContext.tsx
-import { createContext, ReactNode, useContext } from "react";
+import React, { createContext, ReactNode, useContext } from "react";
 
 interface Project {
     title: string;
