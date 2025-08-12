@@ -1,12 +1,14 @@
 // src/components/Hero/Hero.tsx
-import { Container, Content, ProfileImage, Buttons } from "./styles";
+import React from 'react';
+import { Container, Content, ProfileImage, Buttons, BackgroundProfile } from "./styles";
 
 export const Hero = () => {
     return (
         <Container>
+            <BackgroundProfile />
             <Content>
                 <ProfileImage>
-                    <img src="/assets/image/perfil_1.jpg" alt="Ronald Oliveira" />
+                    <img src="src\assets\images\perfil_1.jpg" alt="Ronald Oliveira" />
                 </ProfileImage>
                 <h2>Olá, eu sou Ronald Oliveira</h2>
                 <p>Desenvolvedor Front-End</p>
