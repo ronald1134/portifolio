@@ -1,6 +1,7 @@
 // src/components/Contact/Contact.tsx
 import { useForm } from "react-hook-form";
-import { Container } from "./styles";
+import { Container } from "../Header/styles";
+import React from "react";
 
 interface FormData {
     nome: string;
@@ -15,6 +16,11 @@ export const Contact = () => {
         console.log("Dados enviados:", data);
         reset();
     };
+
+    
+
+
+ // TODO: implementar o envio do formulário
 
     return (
         <Container id="contato">

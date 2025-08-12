@@ -1,6 +1,6 @@
 // src/components/Header/Header.tsx
 import { Container, Logo, NavLinks } from "./styles";
-
+import React from "react";
 export const Header = () => {
     return (
         <Container>
