@@ -1,56 +1,77 @@
-// Contact/styles.ts
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ContactContainer = styled.section`
-  max-width: 1120px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  text-align: center;
 
-  h1 {
+  h2 {
     font-size: 2rem;
-    color: ${(props) => props.theme['gray-100']};
+    font-weight: bold;
+    color: #00bfff; 
+    margin-bottom: 2rem;
   }
-`
+`;
 
 export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
 
   input,
   textarea {
-    background: ${(props) => props.theme['gray-800']};
-    border: none;
+    background: #1e293b; 
+    border: 1px solid #00bfff;
     padding: 1rem;
     border-radius: 8px;
-    color: ${(props) => props.theme['gray-100']};
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: #94a3b8; 
+    }
 
     &:focus {
-      outline: 2px solid ${(props) => props.theme['green-500']};
+      outline: none;
+      box-shadow: 0 0 10px #00bfff;
+      border-color: #00bfff;
     }
   }
 
   textarea {
-    resize: vertical;
-    min-height: 120px;
+    resize: none;
+    min-height: 100px;
   }
-`
+
+  span {
+    color: #ff4d4d; 
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  p {
+    color: #4ade80;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+`;
 
 export const SubmitButton = styled.button`
-  align-self: flex-start;
-  padding: 0.75rem 2rem;
-  background: ${(props) => props.theme['green-500']};
-  border-radius: 8px;
-  color: ${(props) => props.theme['text']};
+  padding: 1rem;
+  background: #00bfff;
+  border-radius: 10px;
+  color: white;
   font-weight: bold;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00bfff;
 
   &:hover {
-    background: ${(props) => props.theme['green-300']};
+    background: #0099cc;
+    box-shadow: 0 0 20px #00bfff;
   }
-`
+`;

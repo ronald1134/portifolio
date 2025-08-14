@@ -1,6 +1,6 @@
 // src/components/Contact/Contact.tsx
 import { useForm } from "react-hook-form";
-import { ContactContainer, ContactForm } from './styles';
+import { ContactContainer, ContactForm, SubmitButton } from './styles';
 import React from "react";
 
 interface FormData {
@@ -30,8 +30,7 @@ export const Contact = () => {
                 <textarea {...register("mensagem", { required: "A mensagem é obrigatória" })} placeholder="Sua mensagem" />
                 {errors.mensagem && <span>{errors.mensagem.message}</span>}
 
-                <button type="submit">Enviar</button>
-
+                <SubmitButton type="submit">Enviar</SubmitButton>
                 {isSubmitSuccessful && <p>Mensagem enviada com sucesso! 💌</p>}
             </ContactForm>
         </ContactContainer>

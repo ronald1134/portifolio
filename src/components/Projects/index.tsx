@@ -41,7 +41,7 @@ export function Projects() {
                     <ProjectTitle>BackOffice</ProjectTitle>
                     <ProjectDescription>
                         Essa aplicação foi feita para gerenciar registros de dados de colaboradores.<br /><br />
-                        Fiz em colaboração com meu amigo <a href="https://github.com/GGNOOB1">Geraldo Vicente</a>.
+                        Fiz em colaboração com meu amigo <a href="https://github.com/GGNOOB1">Geraldo Vicente</a>
                     </ProjectDescription>
                 </ProjectCard>
 
