@@ -6,9 +6,17 @@ const skills = [
     'HTML',
     'CSS',
     'JavaScript',
+    'jQuery',
     'React',
+    'TypeScript',
     'Bootstrap',
+    'Node.js',
     'My SQL',
+    'Express',
+    'Git',
+    'Jest',
+    'Figma',
+    
 ]
 
 export const Skills: React.FC = () => {
