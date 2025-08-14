@@ -1,7 +1,7 @@
-// src/components/Contact/Contact.tsx
 import { useForm } from "react-hook-form";
-import { ContactContainer, ContactForm, SubmitButton } from './styles';
 import React from "react";
+import { ContactContainer, ContactForm, SubmitButton } from './styles';
+import emailjs from '@emailjs/browser';
 
 interface FormData {
     nome: string;
@@ -10,27 +10,55 @@ interface FormData {
 }
 
 export const Contact = () => {
-    const { register, handleSubmit, reset, formState: { errors, isSubmitSuccessful } } = useForm<FormData>();
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors, isSubmitSuccessful }
+    } = useForm<FormData>();
 
     const onSubmit = (data: FormData) => {
-        console.log("Dados enviados:", data);
-        reset();
+        const serviceID = 'service_l587jbm';
+        const templateID = 'template_3rlg4kx';
+        const publicKey = 'aort615WjgAxTyRn7';
+
+        emailjs.send(serviceID, templateID, { ...data }, publicKey)
+            .then(
+                (result) => {
+                    console.log('Mensagem enviada com sucesso!', result.text);
+                    reset(); 
+                },
+                (error) => {
+                    console.error('Falha ao enviar a mensagem:', error.text);
+                }
+            );
     };
 
     return (
         <ContactContainer id="contato">
             <h2>Contato</h2>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("nome", { required: "O nome é obrigatório" })} placeholder="Seu nome" />
+                <input
+                    {...register("nome", { required: "O nome é obrigatório" })}
+                    placeholder="Seu nome"
+                />
                 {errors.nome && <span>{errors.nome.message}</span>}
 
-                <input type="email" {...register("email", { required: "O email é obrigatório" })} placeholder="Seu e-mail" />
+                <input
+                    type="email"
+                    {...register("email", { required: "O email é obrigatório" })}
+                    placeholder="Seu e-mail"
+                />
                 {errors.email && <span>{errors.email.message}</span>}
 
-                <textarea {...register("mensagem", { required: "A mensagem é obrigatória" })} placeholder="Sua mensagem" />
+                <textarea
+                    {...register("mensagem", { required: "A mensagem é obrigatória" })}
+                    placeholder="Sua mensagem"
+                />
                 {errors.mensagem && <span>{errors.mensagem.message}</span>}
 
                 <SubmitButton type="submit">Enviar</SubmitButton>
+
                 {isSubmitSuccessful && <p>Mensagem enviada com sucesso! 💌</p>}
             </ContactForm>
         </ContactContainer>
