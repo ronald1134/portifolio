@@ -1,5 +1,10 @@
-// components/Header/styles.ts
+// src/components/Header/styles.ts
 import styled from 'styled-components';
+
+const bp = {
+  md: '768px',
+  lg: '1024px',
+};
 
 export const HeaderContainer = styled.header`
   background: rgba(30, 41, 59, 0.8);
@@ -10,23 +15,12 @@ export const HeaderContainer = styled.header`
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   height: 6rem;
-
   display: flex;
   align-items: center;
-`;
-
-export const Navbar = styled.nav`
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 
 export const Logo = styled.h1`
-
-  display: flex;
-  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -45,20 +39,60 @@ export const Logo = styled.h1`
   }
 `;
 
-export const NavLinks = styled.ul`
+/* Botão hambúrguer animado */
+export const Burger = styled.button<{ $open: boolean }>`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2001;
+
+  span {
+    height: 3px;
+    width: 100%;
+    background: #f8fafc;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    transform-origin: center;
+  }
+
+  /* Anima em X quando aberto */
+  span:nth-child(1) {
+    transform: ${({ $open }) => ($open ? 'rotate(45deg) translateY(9px)' : 'rotate(0)')};
+  }
+  span:nth-child(2) {
+    opacity: ${({ $open }) => ($open ? '0' : '1')};
+  }
+  span:nth-child(3) {
+    transform: ${({ $open }) => ($open ? 'rotate(-45deg) translateY(-9px)' : 'rotate(0)')};
+  }
+
+  @media (min-width: ${bp.md}) {
+    display: none;
+  }
+`;
+/* Menu responsivo */
+export const NavLinks = styled.ul<{ $open: boolean }>`
+  list-style: none;
+  margin: 0;       
+  padding: 0;      
   display: flex;
   align-items: center; 
-  justify-content: end;
   gap: 3rem;
   font-size: 1.2rem;
-  width: 100%;
-  height: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2000;
 
   a {
     position: relative;
     text-decoration: none;
     color: inherit;
-    line-height: 1; /* <-- mantém alinhado com o Logo */
+    line-height: 1;
   }
 
   a::after {
@@ -74,5 +108,21 @@ export const NavLinks = styled.ul`
 
   a:hover::after {
     width: 100%;
+  }
+
+  /* Mobile: vira painel lateral deslizante */
+  @media (max-width: ${bp.md}) {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    flex-direction: column;
+    background: rgba(30, 41, 59, 0.95);
+    padding: 2rem;
+    width: 220px;
+    transform: ${({ $open }) => ($open ? 'translateX(0)' : 'translateX(110%)')};
+    opacity: ${({ $open }) => ($open ? '1' : '0')};
+    pointer-events: ${({ $open }) => ($open ? 'auto' : 'none')};
+    border-radius: 8px 0 0 8px;
+    gap: 1.25rem;
   }
 `;
