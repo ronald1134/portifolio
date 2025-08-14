@@ -11,6 +11,9 @@ import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
 import { Skills } from './components/Skills';
 
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
 export default function App() {
   return (
     <PortfolioProvider>

@@ -11,36 +11,67 @@ export const AboutContainer = styled.section`
 `;
 
 export const AboutContent = styled.div`
- max-width: 900px;
- text-align: center;
+  max-width: 900px;
+  text-align: center;
 `;
 
 export const AboutTitle = styled.h2`
- font-size: 2rem;
- color: ${({ theme }) => theme["green-500"]};
+  font-size: 2rem;
+  color: ${({ theme }) => theme["green-500"]};
   margin-bottom: 1.5rem;
 `;
 
 export const AboutText = styled.p`
- font-size: 1.1rem;
- color: ${({ theme }) => theme["gray-300"]}; 
- line-height: 1.6;
+  font-size: 1.1rem;
+  color: ${({ theme }) => theme["gray-300"]}; 
+  line-height: 1.6;
 `;
 
 export const SocialIconsContainer = styled.div`
-  display: flex;
-  gap: 1.2rem;
-  margin-top: 2rem; /* Adicionado para espaçar os ícones do texto */
-  justify-content: center;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
 `;
 
 export const SocialIconLink = styled.a`
-  font-size: 2.5rem;
-  color: #f8fafc;
-  transition: transform 0.3s ease;
-  
-  &:hover {
-    color: #0ea5e9;
-    transform: translateY(-3px);
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    
+    i {
+        font-size: 3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    span {
+        font-size: 0.85rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+    &.github:hover {
+        color: #4a4a4aff; 
+    }
+
+    &.linkedin:hover {
+        color: #0077b5;
+    }
+
+    &.instagram:hover {
+        color: #e1306c;
+    }
+
+    &.instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 `;
