@@ -26,19 +26,20 @@ export const BackgroundProfile = styled.div`
     url('https://media.idownloadblog.com/wp-content/uploads/2019/06/Mac-Pro-macOS-Catalina-Wallpaper.jpg')
     no-repeat center center/cover;
   
-  z-index: 0;
-  filter: blur(3px);
-  opacity: 0.6;
+    z-index: 0;
+    filter: blur(1px);
+    opacity: 0.4;
 
 `;
 
 export const Container = styled.section`
-  min-height: 85vh;
+  min-height: 80vh;
+  padding: 2rem;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
   position: relative;
   overflow: hidden;
   
@@ -60,7 +61,7 @@ export const Content = styled.div`
   h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px ${(props) => props.theme['primary']};
+    text-shadow: 0px 0px 10px #0ea5e9;
     animation: ${flutuar} 4s ease-in-out infinite;
   }
 
@@ -71,8 +72,8 @@ export const Content = styled.div`
 `;
 
 export const ProfileImage = styled.div`
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto 2rem;
   border-radius: 50%;
   overflow: hidden;
