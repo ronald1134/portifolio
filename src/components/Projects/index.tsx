@@ -16,7 +16,7 @@ export function Projects() {
 {/* TODO: Implementar os cards dos projetos */}
                 <ProjectCard> 
                     <a href="https://timer-ronald1134s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <ProjectImage src="" alt="Preview do Temporizador" />
+                        <ProjectImage src="src/assets/images/timer.png" alt="Preview do Temporizador" />
                     </a>
                     <ProjectTitle>Temporizador</ProjectTitle>
                     <ProjectDescription>
@@ -26,7 +26,7 @@ export function Projects() {
 
                 <ProjectCard>
                     <a href="https://react-feed-sooty.vercel.app/#" target="_blank" rel="noopener noreferrer">
-                        <ProjectImage src="/images/feedpage.png" alt="Preview do Feed Page" />
+                        <ProjectImage src="src/assets/images/feed.png" alt="Preview do Feed Page" />
                     </a>
                     <ProjectTitle>Feed Page</ProjectTitle>
                     <ProjectDescription>
@@ -36,7 +36,7 @@ export function Projects() {
 
                 <ProjectCard>
                     <a href="https://ronald1134.github.io/Project_forms/" target="_blank" rel="noopener noreferrer">
-                        <ProjectImage src="" alt="Preview do BackOffice" />
+                        <ProjectImage src="src/assets/images/backoffice.png" alt="Preview do BackOffice" />
                     </a>
                     <ProjectTitle>BackOffice</ProjectTitle>
                     <ProjectDescription>
@@ -47,7 +47,7 @@ export function Projects() {
 
                 <ProjectCard>
                     <a href="https://ronald1134.github.io/projeto-login1.0/" target="_blank" rel="noopener noreferrer">
-                        <ProjectImage src="/images/loginpage.png" alt="Preview da Login Page" />
+                        <ProjectImage src="src/assets/images/login page.png" alt="Preview da Login Page" />
                     </a>
                     <ProjectTitle>Login Page</ProjectTitle>
                     <ProjectDescription>
