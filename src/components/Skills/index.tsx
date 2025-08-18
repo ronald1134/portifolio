@@ -21,7 +21,7 @@ const skills = [
 
 export const Skills: React.FC = () => {
     return (
-        <SkillsSection id="habilidades" className="section">
+        <SkillsSection id="habilidades" className="section" data-aos="fade-up">
             <Title>Habilidades</Title>
             <SkillsList>
                 {skills.map((skill) => (
