@@ -2,7 +2,7 @@ import React from 'react'
 import { GlobalStyle } from "./styles/GlobalStyle";
 import { PortfolioProvider } from "./context/PortfolioContext";
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero"; // <-- Importa o Hero
+import { Hero } from "./components/Hero";
 import { Contact } from "./components/Contact/Contact";
 import { ThemeProvider } from "styled-components";
 import defaultTheme from "./styles/themes/default";

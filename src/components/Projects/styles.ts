@@ -41,22 +41,22 @@ export const ProjectImage = styled.img`
   width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 2px solid ${({ theme }) => theme["green-500"]};
+  border: 2px solid ${( props ) => props.theme["green-500"]};
 `;
 
 export const ProjectTitle = styled.h3`
   font-size: 1.3rem;
-  color: ${({ theme }) => theme["green-500"]};
+  color: ${( props ) => props.theme["green-500"]};
   margin-bottom: 0.8rem;
 `;
 
 export const ProjectDescription = styled.p`
   font-size: 1rem;
-  color: ${({ theme }) => theme["gray-300"]};
+  color: ${( props ) => props.theme["gray-300"]};
   line-height: 1.5;
 
   a {
-    color: ${({ theme }) => theme["green-500"]};
+    color: ${( props ) => props.theme["green-500"]};
     text-decoration: underline;
   }
 `;
