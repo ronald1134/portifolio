@@ -11,15 +11,22 @@ import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
 import { Skills } from './components/Skills';
 
+
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+AOS.init({
+  duration: 1000,
+});
 
 export default function App() {
   return (
     <PortfolioProvider>
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyle />
-        
+
         <Header />
         <Hero />
         <About />
@@ -27,7 +34,7 @@ export default function App() {
         <Skills />
         <Contact />
         <Footer />
-        
+
         {/* Acessibilidade */}
       </ThemeProvider>
     </PortfolioProvider>

@@ -5,8 +5,8 @@ export function About() {
     return (
         <AboutContainer id="about">
             <AboutContent>
-                <AboutTitle>Sobre Mim</AboutTitle>
-                <AboutText>
+                <AboutTitle data-aos="fade-up">Sobre Mim</AboutTitle>
+                <AboutText data-aos="fade-right">
                     <div>
                         Olá! Me chamo <strong>Ronald Oliveira</strong>, tenho 20 anos <br /><br /> e sou estudante de
                         <strong>Análise e Desenvolvimento de Sistemas </strong>
@@ -22,7 +22,7 @@ export function About() {
                         que aparece pelo caminho. Vamos construir o futuro juntos?
                     </div>
                 </AboutText>
-                <SocialIconsContainer>
+                <SocialIconsContainer data-aos="zoom-in" data-aos-duration="1000">
                     <SocialIconLink href="https://github.com/ronald1134" target="_blank" className="github">
                         <i className="fab fa-github"></i>
                         <span>GitHub</span>
