@@ -26,7 +26,7 @@ export const Contact = () => {
             .then(
                 (result) => {
                     console.log('Mensagem enviada com sucesso!', result.text);
-                    reset(); 
+                    reset();
                 },
                 (error) => {
                     console.error('Falha ao enviar a mensagem:', error.text);
@@ -35,7 +35,12 @@ export const Contact = () => {
     };
 
     return (
-        <ContactContainer id="contato">
+        <ContactContainer id="contato" data-aos="fade-up"
+            data-aos-duration="1200"  // Duração em ms
+            data-aos-delay="300"      // Atraso em ms
+            data-aos-offset="200"     // Distância antes de ativar
+            data-aos-easing="ease-in-out" // Tipo de easing
+            >
             <h2>Contato</h2>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
                 <input
