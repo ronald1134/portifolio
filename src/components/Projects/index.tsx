@@ -11,10 +11,14 @@ import {
 export function Projects() {
     return (
         <ProjectsContainer id="projects">
-            <h2>Meus Projetos</h2>
-            <ProjectsGrid>
-{/* TODO: Implementar os cards dos projetos */}
-                <ProjectCard> 
+            <h2 data-aos="fade-up">Meus Projetos</h2>
+            <ProjectsGrid data-aos="fade-up"
+                data-aos-duration="1200"  // Duração em ms
+                data-aos-delay="300"      // Atraso em ms
+                data-aos-offset="200"     // Distância antes de ativar
+                data-aos-easing="ease-in-out" // Tipo de easing
+                >
+                <ProjectCard>
                     <a href="https://timer-ronald1134s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <ProjectImage src="src/assets/images/timer.png" alt="Preview do Temporizador" />
                     </a>
