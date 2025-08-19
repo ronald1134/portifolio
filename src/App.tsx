@@ -1,6 +1,6 @@
 import React from 'react'
 import { GlobalStyle } from "./styles/GlobalStyle";
-import { PortfolioProvider } from "./contextTMP/PortfolioContext";
+import { PortfolioProvider } from "./Context/PortfolioContext";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Contact } from "./components/Contact/Contact";
