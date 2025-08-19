@@ -40,7 +40,7 @@ export function Projects() {
 
                 <ProjectCard>
                     <a href="https://ronald1134.github.io/Project_forms/" target="_blank" rel="noopener noreferrer">
-                        <ProjectImage src="/images/backoffice.png" alt="Preview do BackOffice" />
+                        <ProjectImage src="/images/backOffice.png" alt="Preview do BackOffice" />
                     </a>
                     <ProjectTitle>BackOffice</ProjectTitle>
                     <ProjectDescription>
