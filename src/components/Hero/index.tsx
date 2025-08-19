@@ -8,7 +8,7 @@ export const Hero = () => {
             <BackgroundProfile />
             <Content>
                 <ProfileImage>
-                    <img src="src\assets\images\perfil_1.jpg" alt="Ronald Oliveira" />
+                    <img src="/images/perfil_1.jpg" alt="Ronald Oliveira" />
                 </ProfileImage>
                 <h2>Olá, eu sou Ronald Oliveira</h2>
                 <p>Desenvolvedor Front-End</p>
