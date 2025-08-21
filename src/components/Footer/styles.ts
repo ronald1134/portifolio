@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background: #1e293b;
   color: #94a3b8;
   font-size: 0.9rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 `
 export const FooterText = styled.p`
   margin: 0;
