@@ -42,7 +42,7 @@ export const Contact = () => {
             data-aos-easing="ease-in-out" // Tipo de easing
             >
             <h2>Contato</h2>
-            <ContactForm onSubmit={handleSubmit(onSubmit)}>
+            <ContactForm onSubmit={handleSubmit(onSubmit)} autoComplete="off">
                 <input
                     {...register("nome", { required: "O nome é obrigatório" })}
                     placeholder="Seu nome"
