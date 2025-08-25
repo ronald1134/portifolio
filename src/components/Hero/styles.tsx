@@ -14,24 +14,6 @@ const gradient = keyframes`
     100% { background-position: 200% center; }
 `;
 
-export const BackgroundProfile = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  
-  /* background: linear-gradient(135deg, rgba(14, 165, 233, 0.1),
-                                      rgba(14, 165, 233, 0.1)),
-    url('https://media.idownloadblog.com/wp-content/uploads/2019/06/Mac-Pro-macOS-Catalina-Wallpaper.jpg')
-    no-repeat center center/cover; */
-  
-    z-index: 0;
-    filter: blur(1px);
-    opacity: 0.4;
-
-`;
-
 export const Container = styled.section`
   min-height: 80vh;
   padding: 2rem;
