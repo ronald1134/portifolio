@@ -23,7 +23,7 @@ export const Hero = () => {
                     lowlightColor: 0x000000,
                     baseColor: 0x0d1117,
                     blurFactor: 0.7,
-                    speed: 1.0
+                    speed: 2.0
                 })
             );
         }
@@ -42,7 +42,7 @@ export const Hero = () => {
                 <p>Desenvolvedor Front-End</p>
                 <Buttons>
                     <a href="#contato" className="btn">Fale comigo</a>
-                    <a href="/docs/curriculo_programador.pdf" download className="btn btn-cv">Download CV</a>
+                    <a href="/docs/cv_ronald.pdf" download className="btn btn-cv">Download CV</a>
                 </Buttons>
             </Content>
         </Container>
