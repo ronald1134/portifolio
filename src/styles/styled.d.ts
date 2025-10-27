@@ -1,8 +1,8 @@
 // augmentação de tipos para styled-components
 import "styled-components";
-import { DefaultThemeType } from "./themes/default";
+import { ThemeType  } from "./themes/default";
 
 declare module "styled-components" {
     // informa ao TS o formato de props.theme
-    export interface DefaultTheme extends DefaultThemeType { }
+    export interface DefaultTheme extends ThemeType  { }
 }

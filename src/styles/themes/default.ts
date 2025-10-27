@@ -7,6 +7,7 @@ const defaultTheme = {
         'primary': '#0ea5e9',
         'primary-variant': '#38bdf8',
         'glass': 'rgba(255,255,255,0.05)',
+        'green-500': '#22c55e',
     },
     typography: {
         fontFamily: "'Poppins', sans-serif",
@@ -16,5 +17,5 @@ const defaultTheme = {
     },
 } as const;
 
-export type DefaultThemeType = typeof defaultTheme;
+export type ThemeType  = typeof defaultTheme;
 export default defaultTheme;
