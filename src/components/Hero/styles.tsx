@@ -25,13 +25,13 @@ export const Container = styled.section`
   position: relative;
   overflow: hidden;
   
-  color: ${(props) => props.theme['text']};
+  color: ${(props) => props.theme.colors['text']};
 
   &::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: ${(props) => props.theme['gray-900']};
+    background: ${(props) => props.theme.colors['gray-900']};
     opacity: 0.7;
   }
 `;
@@ -39,7 +39,7 @@ export const Container = styled.section`
 export const Content = styled.div`
   position: relative;
   z-index: 1;
-  color: ${(props) => props.theme['white']};
+  color: ${(props) => props.theme.colors['text']};
 
   h2 {
     font-size: 3rem;
@@ -60,8 +60,8 @@ export const ProfileImage = styled.div`
   margin: 0 auto 2rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid ${(props) => props.theme['primary']};
-  box-shadow: 0 0 20px ${(props) => props.theme['primary']};
+  border: 3px solid ${(props) => props.theme.colors['primary']};
+  box-shadow: 0 0 20px ${(props) => props.theme.colors['primary']};
 
   img {
     width: 100%;
