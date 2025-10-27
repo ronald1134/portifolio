@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.tsx
 import React, { useEffect, useRef, useState } from 'react';
 import { Container, Content, ProfileImage, Buttons } from "./styles";
 import FOG from 'vanta/dist/vanta.fog.min';

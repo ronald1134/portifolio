@@ -1,4 +1,3 @@
-// src/components/Header/Header.tsx
 import React, { useState } from "react";
 import { HeaderContainer, Logo, NavLinks, Burger } from "./styles";
 
