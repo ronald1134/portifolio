@@ -1,4 +1,3 @@
-// styles/GlobalStyle.ts
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -10,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;
     background: linear-gradient(145deg, #0f172a, #1e293b);
     color: #f8fafc;
     line-height: 1.6;

@@ -6,7 +6,7 @@ export const AboutContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${( props ) => props.theme["gray-900"]};
+  background-color: ${( props ) => props.theme.colors["gray-900"]};
   padding: 4rem 2rem;
 `;
 
@@ -17,13 +17,13 @@ export const AboutContent = styled.div`
 
 export const AboutTitle = styled.h2`
   font-size: 2rem;
-  color: ${( props ) => props.theme["green-500"]};
+  color: ${( props ) => props.theme.colors["green-500"]};
   margin-bottom: 1.5rem;
 `;
 
 export const AboutText = styled.div`
   font-size: 1.1rem;
-  color: ${( props ) => props.theme["gray-300"]}; 
+  color: ${( props ) => props.theme.colors["gray-300"]}; 
   line-height: 1.6;
 `;
 
