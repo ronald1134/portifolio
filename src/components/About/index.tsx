@@ -3,7 +3,7 @@ import { AboutContainer, AboutContent, AboutTitle, AboutText, SocialIconsContain
 
 export function About() {
     return (
-        <AboutContainer id="about">
+        <AboutContainer id="sobre">
             <AboutContent>
                 <AboutTitle data-aos="fade-up">Sobre Mim</AboutTitle>
                 <AboutText data-aos="fade-right">

@@ -10,7 +10,7 @@ import {
 
 export function Projects() {
     return (
-        <ProjectsContainer id="projects">
+        <ProjectsContainer id="projetos">
             <h2 data-aos="fade-up">Meus Projetos</h2>
             <ProjectsGrid data-aos="fade-up"
                 data-aos-duration="1200"  // Duração em ms
