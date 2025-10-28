@@ -1,4 +1,3 @@
-// src/components/Header/styles.ts
 import styled from 'styled-components';
 
 const bp = {
@@ -39,7 +38,6 @@ export const Logo = styled.h1`
   }
 `;
 
-/* Botão hambúrguer animado */
 export const Burger = styled.button<{ $open: boolean }>`
   display: flex;
   flex-direction: column;
@@ -76,7 +74,7 @@ export const Burger = styled.button<{ $open: boolean }>`
     display: none;
   }
 `;
-/* Menu responsivo */
+
 export const NavLinks = styled.ul<{ $open: boolean }>`
   list-style: none;
   margin: 0;       
@@ -110,7 +108,6 @@ export const NavLinks = styled.ul<{ $open: boolean }>`
     width: 100%;
   }
 
-  /* Mobile: vira painel lateral deslizante */
   @media (max-width: ${bp.md}) {
     position: absolute;
     top: 6rem;

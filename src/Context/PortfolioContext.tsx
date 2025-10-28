@@ -1,4 +1,3 @@
-// src/context/PortfolioContext.tsx
 import React, { createContext, ReactNode, useContext } from "react";
 
 interface Project {
